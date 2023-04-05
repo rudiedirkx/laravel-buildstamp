@@ -2,8 +2,8 @@
 
 function fresh_asset(string $path) : string {
 	$url = asset($path);
-	if (strpos($url, '?_') === false) {
-		$url .= '?_' . config('app.buildstamp');
+	if (strpos($url, '?_v=') === false) {
+		$url .= '?_v=' . config('app.buildstamp');
 	}
 	return $url;
 }

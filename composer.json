@@ -1,0 +1,30 @@
+{
+    "name": "rdx/laravel-buildstamp",
+    "description": "Adds a buildstamp for fresh assets etc.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "rdx\\buildstamp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rdx\\buildstamp\\BuildstampServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Rudie Dirkx",
+            "email": "github@hotblocks.nl"
+        }
+    ],
+    "require": {
+        "illuminate/console": "^10.0 || ^9.0 || ^8.0"
+    }
+}

@@ -17,7 +17,7 @@ class BuildstampCommand extends Command {
 
 		$this->setBuildStampInEnvironmentFile($timestamp);
 
-		$this->laravel['config']->set('icares.build_stamp', $timestamp);
+		$this->laravel['config']->set('app.buildstamp', $timestamp);
 
 		$this->info("Application buildstamp [$timestamp] set.");
 
